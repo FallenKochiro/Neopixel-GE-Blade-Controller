@@ -93,14 +93,14 @@
                                                     //
                                                     // NEO_RGB, NEO_GRB+NEO_KHZ800
 
-#define FASTLED_LED_TYPE        WS2812B // define the type of LED used with the FastLED library
+#define FASTLED_LED_TYPE        SK6812 // define the type of LED used with the FastLED library
                                         // if you are NOT using the FastLED library then you can ignore this
                                         // see: https://github.com/FastLED/FastLED/blob/master/src/FastLED.h
 #define FASTLED_RGB_ORDER       GRB     // the color order for the LEDs
                                         // if you are NOT using the FastLED library then you can ignore this
 
-#define NUM_LEDS                144     // number of LEDs in the strip
-#define MAX_BRIGHTNESS          64      // default brightness; lower value = lower current draw
+#define NUM_LEDS                265     // number of LEDs in the strip
+#define MAX_BRIGHTNESS          255      // default brightness; lower value = lower current draw (GE blade = 64, max = 255)
 #define HILT_DATA_PIN           2       // digital pin the hilt's data line is connected to
 #define LED_DATA_PIN            4       // digital pin the LED strip is attached to
 #define LED_PWR_SWITCH_PIN      0       // this pin is held low until the blade turns on, at which point it will be pushed high
